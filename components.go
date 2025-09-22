@@ -260,6 +260,7 @@ type SelectMenu struct {
 	DefaultValues []SelectMenuDefaultValue `json:"default_values,omitempty"`
 
 	Options  []SelectMenuOption `json:"options,omitempty"`
+	Required *bool              `json:"required,omitempty"`
 	Disabled bool               `json:"disabled"`
 
 	// NOTE: Can only be used in SelectMenu with Channel menu type.
